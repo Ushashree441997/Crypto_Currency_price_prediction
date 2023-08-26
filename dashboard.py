@@ -13,32 +13,31 @@ st.title(" :chart_with_upwards_trend: Crypto Currency Prediction")
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
 # browsering the files ----------------------------------------------
-f1 = st.file_uploader(":file folder: Upload a file",type = (["csv","xlsx","txt","xls"]))
-if f1 is not None:
-    filename = f1.name
-    st.write(filename)
-    df = pd.read_csv(filename)
-else:
-    os.chdir(r"E:\MumBaiKharGhar\Major Project DBDA\Project\MajorProject")
-    df = pd.read_csv("Gemini_BTCUSD_d.csv",skiprows=1)
+# f1 = st.file_uploader(":file folder: Upload a file",type = (["csv","xlsx","txt","xls"]))
+# if f1 is not None:
+#     filename = f1.name
+#     st.write(filename)
+#     df = pd.read_csv(filename)
+# else:
+#     df = pd.read_csv("Gemini_BTCUSD_1h.csv",skiprows=1)
 # ---------------------------------------------------------------------------------------
 
-df1 = pd.read_csv("E:\MumBaiKharGhar\Major Project DBDA\Project\MajorProject\Gemini_BTCUSD_d.csv",skiprows=1)
-df2 = pd.read_csv("E:\MumBaiKharGhar\Major Project DBDA\Project\MajorProject\Gemini_ETHUSD_d.csv",skiprows=1)
-df3 = pd.read_csv("E:\MumBaiKharGhar\Major Project DBDA\Project\MajorProject\Gemini_DOGEUSD_d.csv",skiprows=1)
-df4 = pd.read_csv("E:\MumBaiKharGhar\Major Project DBDA\Project\MajorProject\Gemini_LTCUSD_d.csv",skiprows=1)
+df1 = pd.read_csv(".\Dataset\Gemini_BTCUSD_1h.csv",skiprows=1)
+df2 = pd.read_csv(".\Dataset\Gemini_ETHUSD_1h.csv",skiprows=1)
+df3 = pd.read_csv(".\Dataset\Gemini_DOGEUSD_1h.csv",skiprows=1)
+df4 = pd.read_csv(".\Dataset\Gemini_LTCUSD_1h.csv",skiprows=1)
 
 
-col1,col2 = st.columns((2))
-df["date"] = pd.to_datetime(df["date"])
-# #Getting min and max date
-startDate = pd.to_datetime(df["date"]).min()
-endDate = pd.to_datetime(df["date"]).max()
+# col1,col2 = st.columns((2))
+# df["date"] = pd.to_datetime(df["date"])
+# # #Getting min and max date
+# startDate = pd.to_datetime(df["date"]).min()
+# endDate = pd.to_datetime(df["date"]).max()
 
-with col1:
-    date1 = pd.to_datetime(st.date_input("Start Date",startDate))
-with col2:
-    date2 = pd.to_datetime(st.date_input("End Date",endDate))
+# with col1:
+#     date1 = pd.to_datetime(st.date_input("Start Date",startDate))
+# with col2:
+#     date2 = pd.to_datetime(st.date_input("End Date",endDate))
 # -------------------------------------------------------------------------
 
 col1, col2= st.columns([2, 2])
