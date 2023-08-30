@@ -3,24 +3,10 @@ import numpy as np
 import pandas as pd
 import warnings
 warnings.filterwarnings('ignore')
-from PIL import Image
-import base64
 
-st.set_page_config(page_title="Crypto Currency Price Prediction",page_icon = ":chart_with_upwards_trend",layout="wide")
-st.title(" :chart_with_upwards_trend: Crypto Currency Price Prediction")
+st.set_page_config(page_title="Crypto Currency Prediction",page_icon = ":chart_with_upwards_trend",layout="wide")
+st.title(" :chart_with_upwards_trend: Crypto Currency Prediction")
 
-# -----------------------------------------------------------------------------------
-# GIF
-file_ = open(r"E:\MumBaiKharGhar\Major Project DBDA\Project\MajorProject\currency_1.gif", "rb")
-contents = file_.read()
-data_url = base64.b64encode(contents).decode("utf-8")
-file_.close()
-
-st.markdown(
-    f'<img src="data:image/gif;base64,{data_url}" alt="bitcoin gif">',
-    unsafe_allow_html=True
-)
-# -------------------------------------------------------------------------------------------
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
 # browsering the files ----------------------------------------------
@@ -54,17 +40,17 @@ df4 = pd.read_csv(".\Dataset\Gemini_LTCUSD_1h.csv",skiprows=1)
 col1, col2= st.columns([2, 2])
 data = np.random.randn(5, 5)
 
-col1.subheader("Gemini BTCUSD Coin ")
+col1.subheader("Gemini Bitcoin Coin ")
 col1.line_chart(data=df1,x='date',y='close',width=200, height=500)
-col2.subheader("Gemini ETHUSD Coin ")
+col2.subheader("Gemini Bitcoin Coin ")
 col2.line_chart(data=df2,x='date',y='close',width=200, height=500)
 
 col3, col4= st.columns([2, 2])
 data = np.random.randn(5, 5)
 
-col3.subheader("Gemini DOGEUSD Coin ")
+col3.subheader("Gemini Bitcoin Coin ")
 col3.line_chart(data=df3,x='date',y='close',width=200, height=500)
-col4.subheader("Gemini LTCUSD Coin ")
+col4.subheader("Gemini Bitcoin Coin ")
 col4.line_chart(data=df4,x='date',y='close',width=200, height=500)
 
 
