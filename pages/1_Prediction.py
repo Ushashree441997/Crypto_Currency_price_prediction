@@ -544,8 +544,8 @@ def Lstm(coin,pred_days_input):
     # fig.show()
 
 
-st.set_page_config(page_title="Crypto Currency Prediction",page_icon = ":chart_with_upwards_trend",layout="wide")
-st.title(" :chart_with_upwards_trend: Crypto Currency Prediction")
+st.set_page_config(page_title="Crypto Currency Price Prediction",page_icon = ":chart_with_upwards_trend",layout="wide")
+st.title(" :chart_with_upwards_trend: Crypto Currency  Price Prediction")
 
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
@@ -569,7 +569,7 @@ with col1:
     ('BTCUSD', 'ETHUSD', 'DOGEUSD', 'LTCUSD'))
 with col2:
     option2 = st.selectbox(
-        'Select the type of the coin',
+        'Select the type of the model',
         ('LSTM', 'XGBoost'))
 
 with col3:
