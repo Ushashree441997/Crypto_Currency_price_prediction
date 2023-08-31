@@ -549,7 +549,7 @@ with col1:
         ('BTCUSD', 'ETHUSD', 'DOGEUSD', 'LTCUSD'))
 with col2:
     option2 = st.selectbox(
-        'Select the type of the coin',
+        'Select the type of the model',
         ('LSTM', 'XGBoost'))
 
 with col3:
