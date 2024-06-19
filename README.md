@@ -1,15 +1,15 @@
 # Crypto_Currency_price_prediction
-Crypto Currency price prediction
+
 Stock Crypto Currency Price Prediction Analysis — PG-DBDA
-Description — Build the prediction model and did real time dashboard
-usingpython and build the data pipeline using AWS.
-The project aims to predict future closing prices of the top five crypto
-currencies.Historical data guides predictions for upcoming days, weeks,
+
+Description — Build the prediction model and did real time dashboard using python and build the data pipeline using AWS.
+The project aims to predict future closing prices of the top five crypto currencies. Historical data guides predictions for upcoming days, weeks,
 and months basedon moving average values.
-The interactive Streamlit app on AWS EC2 enables traders and investors
-to access insights and forecasts, considering the volatile nature of crypto
-currencymarkets.
-Tools & Technology used –
+
+The interactive Streamlit app on AWS EC2 enables traders and investors to access insights and forecasts, considering the volatile nature of crypto currencymarkets.
+
+# Tools & Technology used –
+
 Backend: Python, AWS (S3, EC2, EMR), ML algorithms based on Time Series
 Algorithm - ARIMA, LSTM, SVM.
 Frontend: Streamlit.
