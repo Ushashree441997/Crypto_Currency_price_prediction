@@ -9,7 +9,7 @@ st.title(" :chart_with_upwards_trend: Crypto Currency Prediction")
 
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
-# browsering the files ----------------------------------------------------------------------------------------------
+# browsering the files --------------------------------------------------------------------------------------------------
 # f1 = st.file_uploader(":file folder: Upload a file",type = (["csv","xlsx","txt","xls"]))
 # if f1 is not None:
 #     filename = f1.name
@@ -17,7 +17,7 @@ st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow
 #     df = pd.read_csv(filename)
 # else:
 #     df = pd.read_csv("Gemini_BTCUSD_1h.csv",skiprows=1)
-# ------------------------------------------------------------------------------------------------------------------
+# -----------------------------------------------------------------------------------------------------------------------
 
 df1 = pd.read_csv(".\Dataset\Gemini_BTCUSD_1h.csv",skiprows=1)
 df2 = pd.read_csv(".\Dataset\Gemini_ETHUSD_1h.csv",skiprows=1)
