@@ -9,7 +9,7 @@ st.title(" :chart_with_upwards_trend: Crypto Currency Prediction")
 
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
-# browsering the files -------------------------------------------------------------------------------------------
+# browsering the files ----------------------------------------------------------------------------------------------
 # f1 = st.file_uploader(":file folder: Upload a file",type = (["csv","xlsx","txt","xls"]))
 # if f1 is not None:
 #     filename = f1.name
